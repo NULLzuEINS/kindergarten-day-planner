@@ -1,0 +1,27 @@
+{
+  "name": "kindergarten-day-planner",
+  "version": "1.0.0",
+  "description": "Kindergarten day planner",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NULLzuEINS/kindergarten-day-planner.git"
+  },
+  "keywords": [
+    "jspdf"
+  ],
+  "author": "André Lademann <andre@nullzueins.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NULLzuEINS/kindergarten-day-planner/issues"
+  },
+  "homepage": "https://github.com/NULLzuEINS/kindergarten-day-planner#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "jquery-ui": "^1.12.1",
+    "jspdf": "^1.4.1"
+  }
+}

@@ -1,0 +1,27 @@
+#sortable1 {
+	background: #9df;
+}
+#sortable1,
+#sortable2,
+#sortable3 {
+	border: dashed #eee 3px;
+	list-style-type: none;
+	width: 273px;
+	height: 850px;
+	margin: 0;
+	padding: 5px;
+	float: left;
+	margin-right: 10px;
+}
+
+
+#sortable1 li,
+#sortable2 li,
+#sortable3 li {
+	cursor: all-scroll;
+	height: 110px;
+	margin-bottom: 1em;
+	font-size: 1.2em;
+	border: #eee solid 1px;
+	padding: .5em;
+}

@@ -1,0 +1,52 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Day planner</title>
+	<link rel="stylesheet" href="css/planner.css">
+</head>
+<body>
+	<div id="editor"></div>
+	<main id="content">
+
+	<ul id="sortable1" class="connectedSortable">
+	  <li class="ui-state-default">
+	    <img src="http://via.placeholder.com/250x100?text=Empfang" alt="">
+	  </li>
+	  <li class="ui-state-default">
+	    <p title="Zum Bearbeiten doppelt klicken" contenteditable="true" class="editable">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem adipisci.</p>
+	  </li>
+	  <li class="ui-state-default">
+	    <img src="http://via.placeholder.com/250x100/?text=Morgenkreis" alt="">
+	  </li>
+	  <li class="ui-state-default">
+	    <img src="http://via.placeholder.com/250x100/?text=Frühstück" alt="">
+	  </li>
+	  <li class="ui-state-default">
+	    <img src="http://via.placeholder.com/250x100/?text=Mittag" alt="">
+	  </li>
+	  <li class="ui-state-default">
+	    <img src="http://via.placeholder.com/250x100/?text=Hof" alt="">
+	  </li>
+	  <li class="ui-state-default">
+	    <img src="http://via.placeholder.com/250x100/?text=Verabschiedung" alt="Morgenkreis">
+	  </li>
+	</ul>
+
+	<ul id="sortable2" class="connectedSortable">
+	</ul>
+
+
+	<ul id="sortable3" class="connectedSortable">
+	</ul>
+	</main>
+
+	<button id="cmd">Print</button>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.min.js"></script>
+	<script src="js/planner.js"></script>
+</body>
+</html>
