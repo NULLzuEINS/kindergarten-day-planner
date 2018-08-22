@@ -1,52 +1,77 @@
 <html>
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Day planner</title>
-	<link rel="stylesheet" href="css/planner.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day planner</title>
+    <link rel="stylesheet" href="css/planner.css">
 </head>
+
 <body>
-	<div id="editor"></div>
-	<main id="content">
+    <div id="bypassme"></div>
+    <main id="content">
+        <ul id="source" class="connectedSortable">
+            <li class="ui-state-default" id="00_unspecified">
+                <img src="img/00_unspecified.jpg" alt="Allgemein" title="Allgemein">
+            </li>
+            <li class="ui-state-default" id="01_ankommen">
+                <img src="img/01_ankommen.jpg" alt="Ankommen" title="Ankommen">
+            </li>
+            <li class="ui-state-default" id="02_frühstück">
+                <img src="img/02_frühstück.jpg" alt="Frühstück" title="Frühstück">
+            </li>
+            <li class="ui-state-default" id="03_morgenkreis">
+                <img src="img/03_morgenkreis.jpg" alt="Morgenkreis" title="Morgenkreis">
+            </li>
+            <li class="ui-state-default" id="04_draußen">
+                <img src="img/04_draußen.jpg" alt="Draußen" title="Draußen" >
+            </li>
+            <li class="ui-state-default" id="05_wickeln">
+                <img src="img/05_wickeln.jpg" alt="Wickeln" title="Wickeln">
+            </li>
+            <li class="ui-state-default" id="06_tanzen">
+                <img src="img/06_tanzen.jpg" alt="Tanzen" title="Tanzen">
+            </li>
+            <li class="ui-state-default" id="07_lesen">
+                <img src="img/07_lesen.jpg" alt="Lesen" title="Lesen">
+            </li>
+            <li class="ui-state-default" id="08_spielen">
+                <img src="img/08_spielen.jpg" alt="Spielen" title="Spielen">
+            </li>
+            <li class="ui-state-default" id="09_experimentieren">
+                <img src="img/09_experimentieren.jpg" alt="Experimentieren" title="Experimentieren">
+            </li>
+            <li class="ui-state-default" id="10_mittagessen">
+                <img src="img/10_mittagessen.jpg" alt="Mittagessen" title="Mittagessen">
+            </li>
+            <li class="ui-state-default" id="11_mittagsschlaf">
+                <img src="img/11_mittagsschlaf.jpg" alt="Mittagsschlaf" title="Mittagsschlaf">
+            </li>
+            <li class="ui-state-default" id="12_kitafest">
+                <img src="img/12_kitafest.jpg" alt="Kitafest" title="Kitafest">
+            </li>
+            <li class="ui-state-default" id="13_elternabend">
+                <img src="img/13_elternabend.jpg" alt="Elternabend" title="Elternabend">
+            </li>
+            <li class="ui-state-default" id="14_verabschieden">
+                <img src="img/14_verabschieden.jpg" alt="Verabschieden" title="Verabschieden">
+            </li>
+            <li class="ui-state-default" id="planner-text">
+                <p title="Zum Bearbeiten doppelt klicken" contenteditable="true" class="editable">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem adipisci.</p>
+            </li>
 
-	<ul id="sortable1" class="connectedSortable">
-	  <li class="ui-state-default">
-	    <img src="http://via.placeholder.com/250x100?text=Empfang" alt="">
-	  </li>
-	  <li class="ui-state-default">
-	    <p title="Zum Bearbeiten doppelt klicken" contenteditable="true" class="editable">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem adipisci.</p>
-	  </li>
-	  <li class="ui-state-default">
-	    <img src="http://via.placeholder.com/250x100/?text=Morgenkreis" alt="">
-	  </li>
-	  <li class="ui-state-default">
-	    <img src="http://via.placeholder.com/250x100/?text=Frühstück" alt="">
-	  </li>
-	  <li class="ui-state-default">
-	    <img src="http://via.placeholder.com/250x100/?text=Mittag" alt="">
-	  </li>
-	  <li class="ui-state-default">
-	    <img src="http://via.placeholder.com/250x100/?text=Hof" alt="">
-	  </li>
-	  <li class="ui-state-default">
-	    <img src="http://via.placeholder.com/250x100/?text=Verabschiedung" alt="Morgenkreis">
-	  </li>
-	</ul>
+        </ul>
 
-	<ul id="sortable2" class="connectedSortable">
-	</ul>
+        <ul id="planner" class="connectedSortable paper">
+        </ul>
+    </main>
 
-
-	<ul id="sortable3" class="connectedSortable">
-	</ul>
-	</main>
-
-	<button id="cmd">Print</button>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.min.js"></script>
-	<script src="js/planner.js"></script>
+    <button id="cmd">Print</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.min.js"></script>
+    <script src="js/planner.js"></script>
 </body>
+
 </html>

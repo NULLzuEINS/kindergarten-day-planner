@@ -1,35 +1,26 @@
 $(function() {
-  $("#sortable1, #sortable2, #sortable3").sortable({
-    connectWith: ".connectedSortable"
-  }).disableSelection();
+    $('#source, #planner').sortable({
+        connectWith: '.connectedSortable'
+    }).disableSelection();
 
-  $(document).dblclick(".ui-state-default", function() {
-    $("[contenteditable]", this).focus()
-  });
+    $(document).dblclick('.ui-state-default', function() {
+        $('[contenteditable]', this).focus()
+    });
 
-
-  $('#cmd').click(function() {
     var doc = new jsPDF();
-
-    var specialElementHandlers = {
-     '#editor': function(element, renderer){
-      return true;
-     }
-    };
-
     doc.setProperties({
-     title: 'Title',
-     subject: 'This is the subject',
-     author: 'Author Name',
-     keywords: 'generated, javascript, web 2.0, ajax',
-     creator: 'Creator Name'
+        title: 'Title',
+        subject: 'This is the subject',
+        author: 'Author Name',
+        keywords: 'generated, javascript, web 2.0, ajax',
+        creator: 'Creator Name'
     });
 
-
-    doc.fromHTML($('body').get(0), 15, 15, {
-     'width': 170,
-     'elementHandlers': specialElementHandlers
+    $('#cmd').click(function() {
+        //doc.save('tagesplaner.pdf');
+        let items = $('#planner').sortable('toArray');
+        items.forEach(function(item) {
+            console.log($('#' + item + ' > img').attr('src'));
+        });
     });
-    doc.save('sample-file.pdf');
-  });
 });
