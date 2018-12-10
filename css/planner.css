@@ -1,12 +1,12 @@
 body {
-  background-color: #333;
-  padding: 2em;
+    background-color: #333;
+    padding: 2em;
 }
 
 #source {
     position: sticky;
-	background: #9df;
-	border: dashed #eee 3px;
+    background: #9df;
+    border: dashed #eee 3px;
     width: 200px;
     min-height: 500px;
     overflow-y: auto;
@@ -18,27 +18,27 @@ body {
 
 #source,
 #planner {
-	list-style-type: none;
-	min-height: 850px;
-	margin: 0;
-	padding: 5px;
-	float: left;
-	margin-right: 10px;
+    list-style-type: none;
+    min-height: 850px;
+    margin: 0;
+    padding: 5px;
+    float: left;
+    margin-right: 10px;
 }
 
 #source li,
 #planner li {
-	cursor: all-scroll;
-	min-height: 110px;
-	margin-bottom: 1em;
-	font-size: 1.2em;
-	border: #eee solid 1px;
-	padding: .5em;
+    cursor: all-scroll;
+    min-height: 110px;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    border: #eee solid 1px;
+    padding: .5em;
     transition: background-color 200ms;
 }
 
-#source li > img,
-#planner li > img {
+#source li>img,
+#planner li>img {
     width: 100%;
     max-width: 100%;
 }
@@ -46,7 +46,7 @@ body {
 .ui-sortable-helper {
     background-color: #fff;
     box-shadow: 10px 2px 4px #444;
-    box-shadow: 2px 7px 23px -7px rgba(0,0,0,0.45);
+    box-shadow: 2px 7px 23px -7px rgba(0, 0, 0, 0.45);
 }
 
 #planner .ui-sortable-placeholder {
@@ -55,34 +55,47 @@ body {
 }
 
 .paper {
-  background-color: #fff;
-  position: relative;
-  padding: 30px;
+    background-color: #fff;
+    position: relative;
+    padding: 30px;
 }
 
 .paper,
 .paper::before,
 .paper::after {
-  box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 .paper::before,
 .paper::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #eee;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
 }
 
 .paper::before {
-  left: 7px;
-  top: 5px;
-  z-index: -1;
+    left: 7px;
+    top: 5px;
+    z-index: -1;
 }
 
 .paper::after {
-  left: 12px;
-  top: 10px;
-  z-index: -2;
+    left: 12px;
+    top: 10px;
+    z-index: -2;
+}
+
+.btn {
+    background: #128855;
+    border: #444 solid 6px;
+    padding: 1em 2em;
+    color: #eee;
+    font-size: 1em;
+    margin: 1em 2em;
+    cursor: pointer;
+}
+.btn:active, .btn:hover {
+    background: #189;
 }
